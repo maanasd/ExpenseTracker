@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Expense_Tracker.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230707013746_Initial Create")]
-    partial class InitialCreate
+    [Migration("20230719192419_initialcreate")]
+    partial class initialcreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -26,11 +26,11 @@ namespace Expense_Tracker.Migrations
 
             modelBuilder.Entity("Expense_Tracker.Models.Category", b =>
                 {
-                    b.Property<int>("categoryId")
+                    b.Property<int>("CategoryId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("categoryId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryId"), 1L, 1);
 
                     b.Property<string>("Icon")
                         .IsRequired()
@@ -44,18 +44,18 @@ namespace Expense_Tracker.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(10)");
 
-                    b.HasKey("categoryId");
+                    b.HasKey("CategoryId");
 
                     b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("Expense_Tracker.Models.Transaction", b =>
                 {
-                    b.Property<int>("TranscationId")
+                    b.Property<int>("TransactionId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TranscationId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TransactionId"), 1L, 1);
 
                     b.Property<int>("Amount")
                         .HasColumnType("int");
@@ -69,7 +69,7 @@ namespace Expense_Tracker.Migrations
                     b.Property<string>("Note")
                         .HasColumnType("nvarchar(75)");
 
-                    b.HasKey("TranscationId");
+                    b.HasKey("TransactionId");
 
                     b.HasIndex("CategoryId");
 

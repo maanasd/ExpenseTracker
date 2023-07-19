@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Expense_Tracker.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class initialcreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,7 +13,7 @@ namespace Expense_Tracker.Migrations
                 name: "Categories",
                 columns: table => new
                 {
-                    categoryId = table.Column<int>(type: "int", nullable: false)
+                    CategoryId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(50)", nullable: false),
                     Icon = table.Column<string>(type: "nvarchar(5)", nullable: false),
@@ -21,14 +21,14 @@ namespace Expense_Tracker.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Categories", x => x.categoryId);
+                    table.PrimaryKey("PK_Categories", x => x.CategoryId);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Transactions",
                 columns: table => new
                 {
-                    TranscationId = table.Column<int>(type: "int", nullable: false)
+                    TransactionId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CategoryId = table.Column<int>(type: "int", nullable: false),
                     Amount = table.Column<int>(type: "int", nullable: false),
@@ -37,12 +37,12 @@ namespace Expense_Tracker.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Transactions", x => x.TranscationId);
+                    table.PrimaryKey("PK_Transactions", x => x.TransactionId);
                     table.ForeignKey(
                         name: "FK_Transactions_Categories_CategoryId",
                         column: x => x.CategoryId,
                         principalTable: "Categories",
-                        principalColumn: "categoryId",
+                        principalColumn: "CategoryId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -54,11 +54,7 @@ namespace Expense_Tracker.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Transactions");
 
-            migrationBuilder.DropTable(
-                name: "Categories");
         }
     }
 }
