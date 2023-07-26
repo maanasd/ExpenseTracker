@@ -11,9 +11,9 @@ User-friendly interface with responsive design for various devices.
 
 ## Technologies Used
 Backend: ASP.NET Core, C#, Entity Framework Core  
-Frontend: HTML, CSS, JavaScript, Bootstrap, jQuery, Syncfusion (for dropdown lists)  
+Frontend: HTML, CSS, JavaScript, Bootstrap, Syncfusion
 Database: SQL Server (Local SQLExpress Server)  
-Integrated Development Environment (IDE): Visual Studio 2022 (or a recent version)  
+Integrated Development Environment (IDE): Visual Studio 2022
 Version Control: Git  
 Hosting: GitHub  
 
