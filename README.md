@@ -43,11 +43,12 @@ Access the Expense Tracker application in your web browser at http://localhost:5
 
 ## Screenshots
 
-![image](https://github.com/maanasd/ExpenseTracker/assets/43321563/02c64433-0efb-455b-a98d-6b44fbcc4e84)
+![Screenshot 2023-07-24 161130](https://github.com/maanasd/ExpenseTracker/assets/43321563/dd20b1a1-c6b1-48a5-bc7d-c470bd9af6a4)
 
-![image](https://github.com/maanasd/ExpenseTracker/assets/43321563/1c72dd11-f0c3-45aa-9807-776dc000c6fb)
+![Screenshot 2023-07-24 161324](https://github.com/maanasd/ExpenseTracker/assets/43321563/4a3c6132-96f1-4b5c-b6dc-9d78e6ef6d5e)
 
-![image](https://github.com/maanasd/ExpenseTracker/assets/43321563/7e728ffb-0c47-4f67-a794-33e79af1f296)
+![Screenshot 2023-07-24 161611](https://github.com/maanasd/ExpenseTracker/assets/43321563/96eb24f4-47f9-4635-aa4a-6e2335fe4dc9)
 
-![image](https://github.com/maanasd/ExpenseTracker/assets/43321563/486ec692-68d1-4c44-ba6b-e5fea2ffd8c2)
+![Screenshot 2023-07-24 161710](https://github.com/maanasd/ExpenseTracker/assets/43321563/2d2910f5-7a1d-4ea7-82e9-74744b402032)
+
 
